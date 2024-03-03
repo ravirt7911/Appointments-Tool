@@ -1,4 +1,27 @@
-# Getting Started with Create React App
+# Appointments Tool
+The Appointments Tool is a simple and intuitive web application designed to manage appointments efficiently. Users can view, schedule, update, and delete appointments with ease.
+
+## Features
+#### Display Free/Busy Slots:
+The first screen provides a visual representation of free and busy slots for a given week.
+Each slot is 1 hour long, with 6 slots available per day from 10 am to 4 pm.
+Both free and busy slots are distinctly rendered, providing a clear overview.
+#### Select Free Slots:
+Users can click on the free areas to select and book an available timeslot.
+
+#### Appointment Booking:
+Once a user selects a free slot, a pop-up window appears to enter personal details and complete the booking process.
+
+#### Update or Delete Appointments:
+Users have the flexibility to update or delete their existing appointments.
+The update option allows users to modify their personal details for a particular appointment.
+
+#### Drag and Drop Functionality:
+Enhancing user convenience, the application supports drag and drop functionality.
+Users can drag and drop an appointment to the next available slot, providing a seamless rescheduling experience.
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
