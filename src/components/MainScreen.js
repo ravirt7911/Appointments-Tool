@@ -12,6 +12,7 @@ import Calendar from "./Calender";
 import { FaTrashAlt } from "react-icons/fa";
 import AppointmentForm from "./AppointmentForm";
 import "../App.css";
+import packageJson from "../../package.json";
 
 const MainScreen = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -141,9 +142,16 @@ const MainScreen = () => {
     setDraggedSlot(null);
   };
 
+  const handleShowVersion = () => {
+    alert(`App Version: ${packageJson.version}`);
+  };
+
   return (
     <div className="container">
       <h1>Book your appointment</h1>
+      <button onClick={handleShowVersion} style={{ marginBottom: "16px" }}>
+        Show App Version
+      </button>
       <Calendar onSelectDate={handleDateSelect} />
       {selectedDate && (
         <>
