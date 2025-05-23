@@ -6,6 +6,7 @@ The Appointments Tool is a simple and intuitive web application designed to mana
 The first screen provides a visual representation of free and busy slots for a given week.
 Each slot is 1 hour long, with 6 slots available per day from 10 am to 4 pm.
 Both free and busy slots are distinctly rendered, providing a clear overview.
+
 #### Select Free Slots:
 Users can click on the free areas to select and book an available timeslot.
 
@@ -20,6 +21,8 @@ The update option allows users to modify their personal details for a particular
 Enhancing user convenience, the application supports drag and drop functionality.
 Users can drag and drop an appointment to the next available slot, providing a seamless rescheduling experience.
 
+#### Show App Version:
+A new button has been added on the main screen to display the current app version from the package configuration.
 
 ## Getting Started with Create React App
 
