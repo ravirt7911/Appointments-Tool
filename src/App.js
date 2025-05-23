@@ -6,6 +6,12 @@ import "./App.css";
 const App = () => {
   const { user, signInWithGoogle, signOutUser } = useAuth();
   const [isSigningIn, setIsSigningIn] = useState(false);
+  const [now, setNow] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     if (user === null) {
@@ -27,6 +33,9 @@ const App = () => {
   return (
     <div className="app">
       <header className="header">
+        <div style={{ marginRight: "24px", fontWeight: "bold" }}>
+          {now.toLocaleString()}
+        </div>
         <div className="user-info">
           {user ? (
             <>
