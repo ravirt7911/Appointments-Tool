@@ -30,6 +30,17 @@ const App = () => {
         <div className="user-info">
           {user ? (
             <>
+              {/* Show profile picture and name */}
+              {user.photoURL && (
+                <img
+                  src={user.photoURL}
+                  alt="Profile"
+                  className="user-profile"
+                />
+              )}
+              {user.displayName && (
+                <span style={{ marginRight: "12px" }}>{user.displayName}</span>
+              )}
               <button onClick={handleSignInClick}>Sign Out</button>
             </>
           ) : (
